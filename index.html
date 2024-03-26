@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deteksi Perubahan Visibilitas</title>
+</head>
+<body>
+
+  <h1>Selamat datang di Situs Deteksi Perubahan Visibilitas</h1>
+
+  <script>
+    function handleVisibilityChange() {
+      if (document.visibilityState === 'hidden' || document.visibilityState === 'minimized') {
+        alert('Njir, jangan buka tab lain atau minimize browser!');    
+      }
+    }
+
+    // Event listener untuk menangani perubahan visibilitas
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+  </script>
+
+</body>
+</html>
